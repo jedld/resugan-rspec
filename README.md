@@ -20,7 +20,15 @@ Or install it yourself as:
 
 ## Usage
 
+Wrap lines or objects that fire an event inside an expection block:
 
+```ruby
+  expect {
+    _fire :an_event
+  }.to fire :an_event
+```
+
+Use to_fire to check if the specified event is fired. That's it!
 
 ## Development
 
